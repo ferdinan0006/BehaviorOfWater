@@ -1,0 +1,167 @@
+\documentclass[twocolumn,10pt]{extarticle}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{siunitx}
+\usepackage{nicefrac}
+\usepackage{caption}
+\usepackage{graphicx}
+\graphicspath{ {./bilder/} }
+\usepackage[margin=1.5cm]{geometry}
+\usepackage[colorlinks=true,urlcolor=black,linkcolor=black]{hyperref}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{multicol}
+
+\title{\textbf{Fluiddynamik beim Aufschlag eines Wassertropfens auf einer flüssigen Oberfläche}}
+\author{Clara Lina Piper, Carlo Schneider, Ferdinand Nilius, Emil Wienold}
+\date{}
+
+\setlength\parindent{0pt}
+
+\begin{document}
+
+\twocolumn[
+\begin{@twocolumnfalse}
+\maketitle
+\end{@twocolumnfalse}
+]
+
+\section{Einleitung}
+Das Aufprallen eines Tropfens auf eine Flüssigkeitsoberfläche ist sowohl im Alltag als auch in der Technik häufig zu beobachten. Dabei können verschiedene Phänomene auftreten. Dazu gehört unter anderem die Ausbildung von Spritzern aus der Oberfläche. Der Zusammenhang zwischen den Ausgangsbedingungen und dem beobachtbaren Verhalten erscheint dabei komplex und ist nicht selbstverständlich.\newline
+
+In der folgenden Arbeit werden die Umstände, unter denen sich Spritzer aus der Oberfläche lösen, sowie weitere Besonderheiten ihrer Erscheinung untersucht. Die Fragestellung lautet also: \textbf{Unter welchen Aufprallbedingungen kommt es zur Ausbildung von Spritzern, und wie hängen deren Anzahl, Höhe, Durchmesser und Erscheinungsform von diesen Bedingungen ab?}
+
+\subsection{Erwartungen}
+Alltägliche Erfahrungen und grundlegende Konzepte wie die Energieerhaltung erlauben eine intuitive Hypothese zur Fragestellung. Wir erwarten, dass das Auftreten eines Spritzers von der mechanischen Energie des Tropfens beim Aufschlag abhängt. Weiterhin erwarten wir, dass eine höhere mechanische Energie des einfallenden Tropfens die Bildung sowie die Höhe und den Durchmesser von Spritzern begünstigt. Diese qualitative Erwartung vernachlässigt dissipative Energieverluste beim Aufschlagen, weshalb wir nicht direkt von einem linearen Zusammenhang zwischen der Fallhöhe und den Parametern des Spritzers ausgehen.
+
+\subsection{Physikalisches Modell und Weberzahl}
+Wie bereits im Zusammenhang mit der Hypothese erwähnt, spielt die mechanische Energie des Tropfens beim Aufschlag eine zentrale Rolle. Diese Energie hängt für einen Fall aus der Ruhelage und ohne Berücksichtigung von Reibungseffekten mit
+\begin{align*}
+E_\text{kin}&=\dfrac{1}{2}mv^2, \\
+v&=\sqrt{2gh}
+\end{align*}
+direkt mit der Höhe $h$ zusammen, aus der der Tropfen fällt.
+\newline
+
+Die Weberzahl charakterisiert, wie stark ein Fluidvolumen durch seine Trägheit gegenüber den stabilisierenden Effekten der Oberflächenspannung verformt werden kann. Große Weberzahlen entsprechen dabei einer Dominanz der Trägheit und damit einer Tendenz zu starken Verformungen sowie zum Ablösen einzelner Tropfen. Die Weberzahl berechnet sich über
+\begin{align*}
+\mathrm{We}=\dfrac{\rho v^2 D}{\sigma},
+\end{align*}
+wobei $\rho$ die Dichte des Fluids, $v$ die Geschwindigkeit des einfallenden Tropfens, $D$ der Durchmesser des einfallenden Tropfens und $\sigma$ die Oberflächenspannung des Fluids ist.\newline
+
+Wir finden also, dass die Oberflächenspannung und die Größe des Tropfens neben der Fallhöhe einen Einfluss auf das Verhalten beim Aufschlag haben. Infolgedessen müssen wir die Oberflächenspannung und den Durchmesser im Voraus bestimmen und verwenden für die Dichte einen Literaturwert, um anschließend das Verhalten beim Aufschlag auswerten zu können.\newline
+
+Es fällt im weiteren direkt auf, dass die Weberzahl unter diesem Verfahren nur direkt von der Fallhöhe abhängig ist, da alle weiteren einfließenden Größen konstant für alle Messungen sind. Wir können also in der Auswertung Weberzahl und Fallhöhe analog verwenden. 
+
+\section{Oberflächenspannung}
+Im ersten Teil des Versuchs wurde mithilfe der Abreißmethode die Oberflächenspannung von Wasser bestimmt. Als Vorlage für den Versuchsteil diente die Versuchsbeschreibung der Unitversität Hamburg$^[1]$
+\section{Aufbau}
+Der Aufbau zur Analyse des Spritzverhaltens eines Tropfens wurde wie folgt gewählt. 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Bildschirmfoto 2026-07-29 um 16.31.24.png}
+    \caption{Aufbau zur Messung des Spritzverhaltens}
+    \label{fig:mein_bild}
+\end{figure}
+Der Aufbau wurde so optimiert, dass der Abstand zwischen herausgelöstem Tropfen und Millimeter-Papier möglichst gering war. Das Stativ wurde mittels einer Wasserwaage gerade ausgerichtet. Durch die Kamerahalterung konnte gewährleistet werden, dass für verschiedene Fallhöhen vergleichbares Videomaterial produziert werden konnte. 
+\section{Messmethode}
+Es wurde mit einer Fallhöhe von 60 cm begonnen. Die Fallhöhe bezieht sich dabei auf die Spitze der Pipette, also dem Punkt, an dem sich der Tropfen löste. Es wurden nacheinander 10 Tropfen aus der Pipette gelöst und mit der Handykamera eines Iphone 15 in der Slow-Motion-Funktion mit einer Auflösung von 240 FPS in zwei separaten Videos aufgenommen. Diese Vorgehensweise wurde in einem Abstand von 1 cm bis zu einer Fallhöhe von 5 cm wiederholt.
+Diese Videos wurden im Anschluss manuell mit dem Bearbeitungsprogramm VLC Mediaplayer am Computer ausgewertet. Die erhobenen Werte pro Einschlag waren 
+\begin{itemize}
+    \item Anzahl der herausgelösten Tropfen,
+    \item maximale Höhe der Tropfen,
+    \item Durchmesser des höchsten Tropfens
+    \item Bildschirmfoto bei maximaler Höhe zur qualitativen Auswertung.
+\end{itemize}  
+Als Referenz der Längenskala fungierte das Millimeterpapier im Hintergrund. Als zusätzlicher Parameter wurde zudem die Unterscheidung der Spritzer in "Säule" und "Tropfen" eingeführt. Eine "Säule" bezieht sich dabei auf Wasser, das sich oberhalb der Wasseroberfläche befindet, allerdings noch vollständig mit dieser verbunden ist. Ein Tropfen ist hingegen ein vollständig gelöstes, kugelförmiges Fluidvolumen. 
+
+\section{Auswertung}
+Im Prozess der Messungen fiel direkt auf, dass grundlegend zwischen zwei Fällen unterschieden werden kann. Wir nennen diese im Folgenden \glqq Tropfen\grqq und \glqq Säule\grqq. Dabei mein Säule die Messungen bei denen sich eine zusammenhängende Flüssigkeitssäule aus der Oberfläche löst, welche allerdings die gesamte Zeit in Verbindung zur Oberfläche bleibt. Als Tropfen bezeichnen wir die Messungen bei denen sich an der Spitze der erwähnten Säule mindestens ein Tropfen komplett ablöst. Es wurden für beide Fälle alle zuvor erwähnten Messwerte aufgenommen.\newline Die zu Anfang formulierte Fragestellung beschäftigt sich in erster Instanz damit ob und unter welchen Ausgangsbedingungen ein Tropfen gebildet wird. Das beziehen wir hier und im Weiteren auf die Fälle, die zuvor als Tropfen definiert wurden. Tragen wir diese Unterscheidung gegen die Fallhöhe auf und stellen den Zusammenhang als Histogramm da erhalten wir das Bild aus Abbildung~\ref{fig:Histogramm_tr_sau}.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{histogramm_nach_klasse_Fallhoehe_h_in_cm.png}
+    \caption{Histogramm Anzahl der Spritzer auf Fallhöhe. Orange: Säule, Blau: Tropfen.}
+    \label{fig:Histogramm_tr_sau}
+\end{figure}
+Es ist zu erkennen, dass es sowohl bei geringen Fallhöhen bis zu 10 cm, als auch bei hohen Fallhöhen von 50-60 cm überwiegend Säulenbildung auftritt. Über die Fallhöhen $10-50\unit{\centi\meter}$ sind vorwiegend Tropfen zu beobachten. Es findet sich vereinzeltes Auftreten von Säulen auch im Bereich $10-50\unit{\centi\meter}$.\\
+Neben der Unterscheidung ob es sich um einen Tropfen oder um eine Säule handelt können wir auch weitere der erfassten Daten auswerten um ein Verständnis zu erlangen, welche Einflüsse und Bedingungen das beobachtbare Verhalten hervorrufen. Zuerst betrachten wir hier den Verlauf des Durchmessers von den Spritzern in Abhängigkeit von der Weberzahl. 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Durchmesser_splash_in_mm_gegen_Weber_Zahl_mit_fehlern_und_trendfit.png}
+    \caption{Plot Durchmesser Spritzer gegen Weberzahl mit linearem Fit}
+    \label{fig:durchmesser}
+\end{figure}
+Die Abbildung~\ref{fig:durchmesser} zeigt die Werte der Durchmesser auf der $y$-Achse aufgetragen gegen die dazugehörigen Weberzahlen der jeweiligen Messung (Berechnet aus der entsprechenden Fallhöhe). Für die Messpunkte, die zu Tropfen gehören (hier in blau dargestellt) wurde eine lineare Regression durchgeführt. Diese liefert den linearen Zusammenhang
+\begin{align*}
+    D=\left(0,127\cdot\mathrm{We}\pm 1.05\right)\unit{\milli\meter}
+\end{align*}
+mit 
+\begin{align*}
+    R^2=0,874\,.
+\end{align*}
+Eine lineare Regression für alle Werte inklusive der Messungen die hier mit Säulen assoziiert werden liefert einen signifikant geringeren Wert für $R^2$ und wird daher hier ausgelassen. Alternativ ließe sich auch eine Regression nur für die Werte mit Säulen durchführen, doch auch das führt durch die große Lücke in den Werten zu keiner brauchbaren Aussage.\newline
+Neben den Werten für die Durchmesser können wir auch die erfassten Daten für die Höhe der Spritzer auswerten. Tragen wir diese gegen die Weberzahl auf erhalten wir das Bild aus Abbildung~\ref{fig:höhe}.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Hoehe_splash_in_cm_hoechster_Punkt_gegen_Weber_Zahl_mit_fehlern_und_trendfit_nur_tropfen.png}
+    \caption{Höhe des Spritzers gegen Weberzahl mit Binned Median Trend}
+    \label{fig:höhe}
+\end{figure}
+
+Während für den Durchmesser direkt ein linear erscheinender Zusammenhang sichtbar war fällt hier die intuitive Beschreibung der Abhängigkeit schwer. Betrachten wir wieder nur die Messwerte die Tropfen entsprechen (hier in blau), so erkennen wir einen breiten Peak der Spritzhöhe bei $\mathrm{We}\approx280$. Der Peak hat eine steilere Kante (links) bei kleiner werdender Weberzahl und eine lang gezogene Flanke (rechts) für größer werdende Weberzahlen. Legen wir einen binned median Trend (Bins auf der $x$-Achse) durch die Werte für Tropfen, erkennen wir, dass die linke Flanke annähernd linear ansteigt während die rechte Flanke an ein exponentielles Abfallen erinnert. Erneut liefert das Analysieren des Trends für die Werte mit Säulen keine aussagekräftigen Zusammenhänge. Es ist allerdings evident, dass die Säulen eine gewisse Höhe ($\approx2,2\unit{\centi\meter}$) nicht überschreiten. Für sehr hohe Weberzahlen beobachten wir zudem, dass die Spritzhöhe für Tropfen und Säulen auf einen Sättigungswert zuläuft. Wichtig ist allerdings, dass wir auf Grundlage der Daten und dieser Auswertung keine Aussage darüber treffen können, wie sich dieser Zusammenhng für noch größere Fallhöhen / Weberzahlen verhält. 
+\subsection{Diskussion}
+\subsubsection{Oberflächenspannung}
+Die experimentelle Bestimmung der Oberflchenspannung bildete die zentrale Messgröße für die folgende Berechnung der Weberzahl, da dieser Wert als Konstante
+in die Berechnung der Tropfenkinetik und der Weberzahl einfloss. Als Grundlage für einen präzisen und reproduzierbaren Versuchsaufbau nutzten wir die 
+Abrissmethode nach Du-Noüy. Für die Messung verwendeten wir zwei Ringe mit $625$ und $1000\unit{\micro\meter}$ Durchmesser sowie eine Feinwaage zur Kraftmessung, daraus resultierte für Leitungswasser
+eine Oberflächenspannung von $ \sigma = 48.67 \pm 0.33\unit{\newton\meter}$. Trotz der starken Abweichung vom Literaturwert, nutzten wir den Messwert (Ring mit Durchmesser von $1000\unit{\micro\meter}$) 
+relativer Fehler von $32.4\%$) für folgende Berechnungen. Durchaus führt dies zur einer systematischen Abweichung in der Weberzahl, durch den linearen Zusammenhang ist dadurch die qualitative Auswertung nicht betroffen.
+Zudem kennen wir den Literaturwert für das verwendete Leitungswasser nicht.
+\subsubsection{Konzeptionelle Einordnung und Weberzahl}
+Die Weberzahl ist ein Versuch grundsätzlich das kinematische Verhalten von Wasser zu prognostizieren, sie stellt quantitativ dar, wie stark ein FLuid durch seine eigene Trägheit im Verhältnis
+zu den stabilisierenden Kräften der Oberflächenspannung verformt wird.
+Die Weberzahl ließ sich für unsere Berechnungen direkt als Funktion der Falhöhe ausdrücken, da alle weiteren Parameter konstant blieben, dabei drücken hohe Weberzahlen eine Dominanz der 
+Trägheitskräfte aus, was sich unweigerlich als Verformungen und Ablösungen äußert.
+\subsubsection{Spritzverhalten}
+Diesen einfachen erwarteten Zusammenhang koonnten wir nicht bestätigen,  das Spritz - und Verformungsverhalten stellte sich als hochkomplex heraus und widerlegt die einfache Annahme, 
+dass mehr mechanische Energie automatisch zu einer größeren und höheren Spritzbildung führt. Daher unterschieden wir zwischen Säulenbildung und Tropfenbildung, wobei die eigentliche Tropfenbildung
+fast auschließlich bei moderaten Fallhöhen von $10$ bis $50\unit{\centi\meter}$ auftrat. Dies entspricht einer Weberzahl von $100$ bis $750$. Bei extrem kleinen ($<10\unit{\centi\meter}$) und 
+extrem großen ($>50\unit{\centi\meter}$) Fallhöhen dominierte die Säulenbildung ohne Tropfenbildung.
+
+Betrachten wir die Durchmesser, so entsteht ein dem Erwartungswert entsprechender linearer Zusammenhang zwischen Durchmesser und Weberzahl, wobei die Streuung der Werte bei den Tropfen relativ gering ist.
+
+Das Verhalten der Spritzhöhe ist stark nichtlinear, die Höhe der Tropfen erfährt einen steilen Anstieg bis zu einem Peak bei $W_e \approx 280$, bevor sie bei noch größeren Weeberzahlen 
+mit einer langezogenen Flanke wieder abfällt. Auch die gebildeten Säulen zeigen ein ähnliches Verhalten, wobei nach einer erreichen Maximalhöhe von $2,2 \unit{\centi\meter}$ wieder abfällt und auf 
+einen Sättigungswert zuläuft. 
+\subsubsection{Fazit}
+Die durchgeführten Messungen und visuellen Auswertungen legen Nahe, dass der einfache Energieerhaltungssatz das Tropfenverhalten nicht hinreichend beschreibt. Dissipative 
+Effekte, insbesondere eine hohe Energieabgabe in Form von sich ausbreitenden Oberflächenwellen nach dem Einschlag, wurden in der qualitativen Ausgangshypothese nicht berücksichtigt.
+Jedoch stellte sich herraus, dass diese die Dynamik maßgeblich prägen.
+
+Natürlich lag eine Herrausforderung der Arbeit in den fehleranfälligen Messverfahren sowie den begrenzten Möglichkeiten der visuellen Auswertung. Die Bestimmung der Oberflächenspannung 
+ist stark fehlerbehaftet, haupsächlich durch systematische, vermeidbare Fehler, welche sich aus Ringgröße, Materialwahl und Materialpräparation ergeben.
+Trotzdessen können wir das Konzept der Weberzahl als Maß für die Tropfenhkinetik nur teils verifizieren. Die reine Stützung auf die Anfangsbedingungen greift hier zu kurz, zudem wurde die
+Geometrie der Petrischale vernachlässigt, welche jedoch die Welelnausbildung und damit die dissipative Energieabgabe maßgeblich beeinflusst. 
+
+Ursprunglich wurde die Weberzahl in der Fragestellung als Maß für die Tropfenkinetik herangezogen, jedoch zeigte sich, dass die Weberzahl als statische Kennzahl keine hinreichende 
+Kenngröße für die Beschreibung der strukturellen Entwicklung nach dem Tropfeneinschlag ist. Während die Weberzahl eine nützliche erste Näherung darstellt, ist für eine vollständige 
+physikalische Beschreibung zwingend eine Berücksichtigung dissipativer Effekte und fluiddynamischer Wechselwirkungen notwendig. 
+\subsection{Literaturverzeichnis}
+\begin{enumerate}
+    \item "Bestimmung der Oberflächenspannung nach der Abreißmethode", INSTITUT FÜR ANGEWANDTE PHYSIK im Rahmen des Physikalisches Praktikum für Studierende der Ingenieurswissenschaften. 
+    \url{https://www2.physnet.uni-hamburg.de/TUHH/Versuchsanleitung/Oberflaechenspannung_A.pdf}
+    \item Esselborn-Krumbiegel, H. (2008). \textit{Von der Idee zum Text. Eine Anleitung zum wissenschaftlichen Schreiben.} Paderborn: Verlag Ferdinand Schöningh GmbH \& Co. KG.
+     \item Franck, N. (2004). \textit{Handbuch Wissenschafliches Arbeitens.} Frankfurt am Main: Fischer Taschenbuch Verlag.	
+    \item Karmasin, M., \& Ribing, R. (2011). \textit{Die Gestaltung wissenschaftlicher Arbeiten.} Wien: Facultas Verlags- und Buchhandels AG.
+    \item Lengauer, H., \& Wimmer, A. (Oktober 2006). \url{http://www.uni-klu.ac.at} Abgerufen am 30. 9 2013 von Definition Plagiat: \url{http://www.uni-klu.ac.at/main/inhalt/3054.htm}
+    \item Preißner, A. (2012). \textit{Wissenschaftliches Arbeiten : Internet nutzen, Text erstellen, Überblick behalten.} München: Oldenbourg.
+
+    
+\end{enumerate}
+
+
+\end{document}
